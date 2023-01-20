@@ -1,0 +1,28 @@
+//Not Ortalaması Hesaplayan Program
+
+import java.util.Scanner;
+
+public class patikaOdev {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Matematik notunu gir: ");
+		double m = input.nextDouble();
+		System.out.print("Fizik notunu gir: ");
+		double f = input.nextDouble();
+		System.out.print("Kimya notunu gir: ");
+		double k = input.nextDouble();
+		System.out.print("Türkçe notunu gir: ");
+		double t = input.nextDouble();
+		System.out.print("Tarih notunu gir: ");
+		double ta = input.nextDouble();
+		System.out.print("Müzik notunu gir: ");
+		double mu = input.nextDouble();
+		double ort=(m+f+k+t+ta+mu)/6;
+		System.out.println("Not ortalaman: "+ort);
+		System.out.println(ort>=60? "Sınıfı Geçti":"Sınıfta Kaldı");
+		input.close();
+
+	}
+
+}
