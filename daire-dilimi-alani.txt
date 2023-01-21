@@ -1,0 +1,18 @@
+//Daire Dilimi Alanı Hesaplayan Program
+import java.util.Scanner;
+
+public class patikaOdev5 {
+
+	public static void main(String[] args) {
+		double pi = 3.14;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Yarıçapı giriniz: ");
+		double r = input.nextDouble();
+		System.out.print("Dairenin açısını giriniz: ");
+		int a = input.nextInt();
+		System.out.println("Sonuç: " +(pi*r*r*a)/360 + " br karedir");
+		input.close();
+
+	}
+
+}
