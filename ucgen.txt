@@ -1,0 +1,26 @@
+//Dik Üçgende Hipotenüs Bulan Program ve Alan Hesaplama
+
+import java.util.Scanner;
+
+public class patikaOdev3 {
+
+	public static void main(String[] args) {
+		
+		double h;
+		
+		Scanner input = new Scanner (System.in);
+		System.out.print("Dik kenarlardan birini giriniz: ");
+		double a = input.nextDouble();
+		System.out.print("Dik kenarlardan diğerini giriniz: ");
+		double b = input.nextDouble();
+		
+		h = Math.sqrt(a*a+b*b);
+		System.out.println(h+" hipotenüs uzunluğudur.");
+		input.close();
+		
+		double u =(a+b+h)/2;
+		double area = Math.sqrt(u*(u-a)*(u-b)*(u-h));
+		System.out.println("Üçgenin alanı: "+area+" bulunur");
+	}
+
+}
