@@ -1,0 +1,17 @@
+KDV Tutarı Hesaplayan Program
+
+import java.util.Scanner;
+
+public class patikaOdev2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.printf("Lütfen KDV hesaplanması için KDV hariç tutarı giriniz: ");
+		double a = input.nextDouble();
+		double b = a*(1.8); 
+		double c = a+(a*8/100);
+		System.out.println((b>0 && b<1000) ? "KDV'li tutar: " + b : "KDV'li tutar: " + c);
+		input.close();
+	}
+
+}
