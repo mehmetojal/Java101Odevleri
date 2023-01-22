@@ -1,0 +1,24 @@
+// Vücut Kitle İndeksi Hesaplayan Program
+import java.util.Scanner;
+
+public class patikaOdev6 {
+    public static void main(String[] args) {
+        double mt,kg;
+
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.print("Boy(metre) : ");
+        mt = input.nextDouble();
+
+        System.out.print("Kilo : ");
+        kg = input.nextDouble();
+
+        double in =weight/(height*height);
+
+        System.out.println("Vucüt kitle indeksiniz :" + bmi);
+        input.close();
+        
+
+    }
+}
