@@ -14,9 +14,9 @@ public class patikaOdev6 {
         System.out.print("Kilo : ");
         kg = input.nextDouble();
 
-        double in =weight/(height*height);
+        double in =mt/(kg*kg);
 
-        System.out.println("Vucüt kitle indeksiniz :" + bmi);
+        System.out.println("Vucüt kitle indeksiniz :" + in);
         input.close();
         
 
